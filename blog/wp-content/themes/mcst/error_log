@@ -1,0 +1,20 @@
+[04-Oct-2023 07:15:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php on line 15
+[04-Oct-2023 07:19:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php on line 15
+[04-Oct-2023 07:19:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php on line 15
+[05-Oct-2023 09:57:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php on line 15
+[05-Oct-2023 09:57:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/mcstrmi/development.mcst-rmi.org/blog/wp-content/themes/mcst/index.php on line 15

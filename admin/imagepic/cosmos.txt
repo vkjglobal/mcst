@@ -1,0 +1,32 @@
+COSMOS IMMIGRATION
+
+Website URL:https://cosmos.reubrosample.tk/
+
+Admin URL:https://cosmos.reubrosample.tk/admin
+
+Admin username:admin@gmail.com
+password: admin
+
+Database c panel:
+https://server.litewebserver.com:2083/
+
+reubrode
+
+l-ykDvS4VPO-
+
+Db : reubrode_cosmos
+
+DB pass : Reubro@2023
+
+recaptcha link: https://www.google.com/recaptcha/admin/site/671003176
+
+google review:
+https://dash.elfsight.com/widget/00346b33-ebea-43ef-ac43-02ff04befb29
+
+Email SMTP:
+username:
+Password:
+
+VWO
+username:
+password

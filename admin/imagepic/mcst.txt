@@ -1,0 +1,57 @@
+MCST
+
+server link: http://45.76.115.102:2082/logout/?locale=en
+
+username: mcstrmi
+
+password: Reubro@2020
+
+
+<div class="pagination justify-content-center mt-3" >
+                <?php
+                // Calculate the total number of pages
+                $sql = "SELECT COUNT(*) as count FROM cms";
+                $query = $dbh->prepare($sql);
+                $query->execute();
+                $row = $query->fetch(PDO::FETCH_ASSOC);
+                $totalItems = $row['count'];
+                $totalPages = ceil($totalItems / $itemsPerPage);
+
+                // Generate "Previous" link
+                if ($current_page > 1) {
+                    echo '<a href="?page=' . ($current_page - 1) . '" class="page-link">Previous</a>';
+                }
+
+                // Generate numeric page links
+                for ($i = 1; $i <= $totalPages; $i++) {
+                    if ($i == $current_page) {
+                        echo '<span class="page-link">' . $i . '</span>';
+                    } else {
+                        echo '<a href="?page=' . $i . '" class="page-link">' . $i . '</a>';
+                    }
+                }
+
+                // Generate "Next" link
+                if ($current_page < $totalPages) {
+                    echo '<a href="?page=' . ($current_page + 1) . '" class="page-link">Next</a>';
+                }
+                ?>
+                            </table>
+                        </div>
+                        <div aria-label="Page navigation">
+                            <ul class="pagination justify-content-center mt-3">
+                                <li class="page-item disabled">
+                                    <a class="page-link">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- User List End -->
+            </div>

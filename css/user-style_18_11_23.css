@@ -1,0 +1,95 @@
+.login{
+    background: rgb(255,103,0);
+    background: linear-gradient(90deg, rgba(255,103,0,1) 0%, rgba(30,55,104,1) 100%);
+}
+.btn-login{
+    background: rgb(30,55,104);
+    background: linear-gradient(90deg, rgba(30,55,104,1) 0%, rgba(255,103,0,1) 100%);
+}
+.img-wrp img{
+    max-width: 100%;
+}
+.dash-sidebar{
+    position: relative;
+    min-height: 100vh;
+}
+.sidebar-container {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.dash-sidebar .img-wrp{
+    overflow: hidden;
+    width: 50%;
+}
+.dash-sidebar .img-wrp img{
+    border: 3px solid #ffffff;
+}
+.logout-btn{
+    border-color: #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+}
+.logout-btn:hover{
+    border-color: #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
+.link-item{
+    border: 2px solid #C65F19;
+    background-color: #ffffff;
+    color: #1E3768;
+    text-decoration: none;
+}
+.link-item:hover{
+    background-color: #01a3d1;
+    color: #ffffff;
+}
+.sidebar-container .tab-content ul{
+    list-style: none;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+.sidebar-container .nav-pills .nav-link{
+    font-size: 14px;
+}
+.sidebar-container .nav-pills .nav-link.active, .sidebar-container .nav-pills .show>.nav-link{
+    background-color: #1E3768;
+}
+.btn-typ3{
+    background-color: #1E3768;
+    color: #ffffff;
+}
+.btn-typ3:hover{
+    border: 1px solid #1E3768;
+    background-color: #ffffff;
+    color: #1E3768;
+}
+.btn-typ4{
+    background-color: #ffffff;
+    color: #1E3768;
+}
+.btn-typ4:hover{
+    border: 1px solid #ffffff;
+    background-color: #1E3768;
+    color: #ffffff;
+}
+@media(max-width:991px){
+    .dash-sidebar .img-wrp {
+        max-width: 100px;
+    }
+    .sidebar-container{
+        min-height: auto;
+        position: static;
+    }
+    .dash-sidebar{
+        position: static;
+        min-height: 1px;
+    }
+    .sidebar-container .tab-content ul{
+        max-height: 30vh;
+    }
+}

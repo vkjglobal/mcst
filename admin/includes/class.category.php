@@ -1,0 +1,136 @@
+<?php
+/**************************************************************************** 
+   Project Name	::> MCST
+   Module 	::> Class for Referal library management
+   Programmer	::> 
+   Date		::> 04-12-2023
+   DESCRIPTION::::>>>>
+   This is a Class code used to manage Referal library management
+*****************************************************************************/
+include "class.dbaction.php";
+class  Class_category extends Dbaction
+{
+	public function __construct()
+    {
+       $this->db = new Dbaction();
+				
+	}
+    public function addCategory($parent,$name)
+    {
+        $tableName = "categories";
+        $sss =  date("Y-m-d H:i:s");
+        $params = ['cat_dir'=>$name, 'parent_category_id'=>$parent, 'category'=>$name, 'pic'=>'folder.png', 'access'=>'1', 'user_access'=>'0', 'created_at'=>$sss, 'updated_at'=>$sss, 'published'=>'1'];
+      
+        $result = $this->db->insertInto($tableName, $params);
+        return $result;
+    }
+    public function selectCategory()
+    {
+        $tableName = "categories";
+        $result = $this->db->selectCategories($tableName);
+        return $result;
+    }
+    public function SelectParent($p_id)
+    {
+        $tableName = "categories";
+        $result = $this->db->selectCategoriesNamebyId($tableName,$p_id);
+        // print_r($result);
+        return $result;
+    }
+    public function getcategory($id)
+    {
+        $tableName = "categories";
+        $result = $this->db->selectCategoriesNamebyId($tableName,$id);
+        return $result;
+    }
+    public function updateCategoryValue($name,$id)
+    {
+        $tableName = "categories";
+        $result = $this->db->updateCategory($tableName,$name,$id);
+        return $result;
+    }
+    public function DeleteCategory($pid)
+    {
+        $tableName = "categories"; 
+        $id = $pid; 
+        $result = $this->db->deleteCategoryData($tableName,$id);        
+        return $result;
+    }
+    public function getParent_name($parent_id)
+    {
+        $tableName = "categories";
+        $result = $this->db->selectNamebyId($tableName,$parent_id);
+        return $result;
+    }
+    public function selectLibraries()
+    {
+        $tableName = "libraries";
+        $result = $this->db->selectDBLibrary($tableName);
+        return $result;
+    }
+    public function addLibrary($title, $author, $shortdesc, $longdesc, $file_size, $file, $category, $changelog)
+    {
+        $tableName = "libraries";
+        $sss =  date("Y-m-d H:i:s");
+        $params = ['title'=>$title, 'short_description'=>$shortdesc,  'long_description'=>$longdesc, 'file_pic'=>'pdf.png',  'size'=>$file_size,  'created_at'=>$sss, 'file'=>$file, 'author'=>$author, 'updated_at'=>$sss, 'category_id'=>$category, 'changelog'=>$changelog, 'access'=>'1', 'user_access'=>'0', 'published'=>'1'];
+      
+        $result = $this->db->insertInto($tableName, $params);
+        return $result;
+    }
+    public function getlibrary($id)
+    {
+        $tableName = "libraries";
+        $result = $this->db->selectDBLibrarybyId($tableName,$id);
+        return $result;
+
+    }
+    public function update_Library($title, $author, $shortdesc, $longdesc, $file, $changelog, $id)
+    {
+        $tableName = "libraries";
+        $result = $this->db->updateLibrary($tableName, $title, $author, $shortdesc, $longdesc, $file, $changelog, $id);
+        return $result;
+    }
+    public function Delete_library($pid)
+    {
+        $tableName = "libraries"; 
+        $id = $pid; 
+        $result = $this->db->deleteCategoryData($tableName,$id);        
+        return $result;
+    }
+    public function formatfile_size($fileSize)
+    {
+        $precision = 2;
+        // $data = $this->db->formatBytes($fileSize);
+        $units = ['B', 'KB', 'MB', 'GB', 'TB'];
+
+        // Extract the numeric value from the string
+        $bytes = intval($fileSize); // Assuming the sizeString is like '402 bytes'
+    
+        $bytes = max($bytes, 0);
+        $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+        $pow = min($pow, count($units) - 1);
+    
+        return round($bytes / (1 << (10 * $pow)), $precision) . ' ' . $units[$pow];
+        // return $data;
+    }
+    public function selectParentNameId($parent)
+    {
+        $tableName = "categories";
+        $result = $this->db->selectCategoriesNamebyId($tableName,$parent);
+        // selectNamebyId($tableName,$parent);
+        return $result;
+    }
+    public function sanitizeInput($input) 
+    {
+        // Trim whitespace from the beginning and end of the input
+        $input = trim($input);
+    
+        // Remove backslashes
+        $input = stripslashes($input);
+    
+        // Convert special characters to HTML entities
+        $input = htmlspecialchars($input, ENT_QUOTES);
+        return $input;
+    }
+
+}

@@ -1,0 +1,247 @@
+{
+    "_id" : ObjectId("647839bb146d8356461833c3"),
+    "menu" : "Partners",
+    "key" : "partners",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:59.047+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:59.047+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647839ad146d8356461833b6"),
+    "menu" : "Projects",
+    "key" : "projects",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:45.868+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:45.868+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647839cb146d8356461833d0"),
+    "menu" : "Resources",
+    "key" : "resources",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:25:15.919+0000"),
+    "updated_at" : ISODate("2023-06-01T06:25:15.919+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6478398e146d83564618339c"),
+    "menu" : "News",
+    "key" : "news",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64799096a7a7d7f624cba198"),
+    "menu" : "Home",
+    "key" : "home",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6478399e146d8356461833a9"),
+    "menu" : "High Level Policy Unit",
+    "key" : "high-level-policy-unit",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:30.111+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:30.111+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647839da146d8356461833dd"),
+    "menu" : "Our Blog",
+    "key" : "our-blog",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:25:30.058+0000"),
+    "updated_at" : ISODate("2023-06-01T06:25:30.058+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647990d2a7a7d7f624cba199"),
+    "menu" : "About Us",
+    "key" : "about-us",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "updated_at" : ISODate("2023-06-01T06:24:14.765+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647839e9146d8356461833ea"),
+    "menu" : "Reference Library",
+    "key" : "reference-library",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:25:45.376+0000"),
+    "updated_at" : ISODate("2023-06-01T06:25:45.376+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("647839f8146d8356461833f7"),
+    "menu" : "Contact",
+    "key" : "contact",
+    "isSystem" : true,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-01T06:26:00.449+0000"),
+    "updated_at" : ISODate("2023-06-01T06:26:00.449+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("648a99f12bfa2c7e3ae59e67"),
+    "menu" : "Our Team",
+    "key" : "our-team",
+    "parent_menu_id" : "647990d2a7a7d7f624cba199",
+    "parent" : [
+        ObjectId("647990d2a7a7d7f624cba199")
+    ],
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-06-15T04:56:17.733+0000"),
+    "updated_at" : ISODate("2023-07-05T06:35:51.020+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("649e9994811f7f452a05dbd7"),
+    "menu" : "hjbjb",
+    "key" : "hjbjb",
+    "parent_menu_id" : "648a99f12bfa2c7e3ae59e67",
+    "parent" : [
+        ObjectId("648a99f12bfa2c7e3ae59e67")
+    ],
+    "isSystem" : false,
+    "isDeleted" : true,
+    "created_at" : ISODate("2023-06-30T09:00:04.420+0000"),
+    "updated_at" : ISODate("2023-06-30T09:00:04.420+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64a6b0ba979a26566985b05d"),
+    "menu" : "Breaking Stories",
+    "key" : "breaking-stories",
+    "parent_menu_id" : "6478398e146d83564618339c",
+    "parent" : [
+        ObjectId("6478398e146d83564618339c")
+    ],
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-07-06T12:16:58.767+0000"),
+    "updated_at" : ISODate("2023-07-06T12:16:58.767+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64aba06bbac9b19318321991"),
+    "menu" : "Latest Science & Reports",
+    "key" : "latest-science",
+    "parent_menu_id" : "6478398e146d83564618339c",
+    "parent" : [
+        ObjectId("6478398e146d83564618339c")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-07-10T06:08:43.063+0000"),
+    "updated_at" : ISODate("2023-07-10T06:08:43.063+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64aba090bac9b193183219a2"),
+    "menu" : "Latest Presentations",
+    "key" : "latest-presentations",
+    "parent_menu_id" : "6478398e146d83564618339c",
+    "parent" : [
+        ObjectId("6478398e146d83564618339c")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-07-10T06:09:20.642+0000"),
+    "updated_at" : ISODate("2023-08-01T11:12:57.337+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64f7f24291a6775f64fe2bfd"),
+    "menu" : "1",
+    "key" : "1",
+    "parent_menu_id" : "64a6b0ba979a26566985b05d",
+    "parent" : [
+        ObjectId("64a6b0ba979a26566985b05d")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : true,
+    "created_at" : ISODate("2023-09-06T03:30:11.000+0000"),
+    "updated_at" : ISODate("2023-09-06T03:30:11.000+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64f7f30a91a6775f64fe2c0e"),
+    "menu" : "2",
+    "key" : "2",
+    "parent_menu_id" : "6478399e146d8356461833a9",
+    "parent" : [
+        ObjectId("6478399e146d8356461833a9")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : true,
+    "created_at" : ISODate("2023-09-06T03:33:30.286+0000"),
+    "updated_at" : ISODate("2023-09-06T03:33:30.286+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64f7fa9591a6775f64fe2cd4"),
+    "menu" : "2",
+    "key" : "2",
+    "parent_menu_id" : "6478399e146d8356461833a9",
+    "parent" : [
+        ObjectId("6478399e146d8356461833a9")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-09-06T04:05:41.590+0000"),
+    "updated_at" : ISODate("2023-09-06T04:05:53.952+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("64f7fab691a6775f64fe2ce2"),
+    "menu" : "1",
+    "key" : "1",
+    "parent_menu_id" : "64a6b0ba979a26566985b05d",
+    "parent" : [
+        ObjectId("64a6b0ba979a26566985b05d")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : true,
+    "created_at" : ISODate("2023-09-06T04:06:14.677+0000"),
+    "updated_at" : ISODate("2023-09-06T04:06:14.677+0000"),
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6500392991a6775f64fe33d8"),
+    "menu" : "imfo",
+    "key" : "imfo",
+    "parent_menu_id" : "647990d2a7a7d7f624cba199",
+    "parent" : [
+        ObjectId("647990d2a7a7d7f624cba199")
+    ],
+    "order" : NumberInt(0),
+    "isSystem" : false,
+    "isDeleted" : false,
+    "created_at" : ISODate("2023-09-12T10:10:49.608+0000"),
+    "updated_at" : ISODate("2023-09-12T10:10:49.608+0000"),
+    "__v" : NumberInt(0)
+}

@@ -1,0 +1,34 @@
+
+<?php
+@include 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['_id'])) {
+    $_id = $_GET['_id'];
+try{
+    // Perform the delete operation
+    $sql = "DELETE FROM menus WHERE _id = :_id";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':_id', $_id, PDO::PARAM_INT);
+    var_dump($_id);
+    // Delete succeeded
+    if ($query->execute()) {
+
+        session_start();
+        // Set a success message in session
+        $_SESSION['success_message'] = 'Menu item deleted successfully.';
+        // Redirect to menu list page
+        header('Location: menu.php');
+        exit();
+    } else {
+        // Deletion failed
+        echo '<div id="errorMessage" class="alert alert-danger"><center>Failed to delete menu item.</center></div>';
+    }
+} catch (PDOException $e) {
+    // Handle database-related errors
+    echo "Database Error: " . $e->getMessage();
+    error_log("Database Error: " . $e->getMessage(), 0);
+}
+} else {
+    echo "Invalid request method or user ID not specified.";
+}
+?>
